@@ -5,11 +5,11 @@ Description: Creates the Lambda function and API for the PyTorch inference appli
 Parameters: 
   BucketName: 
     Type: String
-    Default: somebucket
+    Default: sagemaker-storage
     Description: Enter the name of the S3 bucket storing your PyTorch model artefacts.
   ObjectKey: 
     Type: String
-    Default: "sagemaker-storage"
+    Default: /fastai-models/lesson1/model.tar.gz
     Description: Enter the S3 object key path of your PyTorch model artefacts.
   LambdaLayerArn:
     Type: String
